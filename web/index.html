@@ -9,15 +9,22 @@
 </head>
 
 <body>
-    <a href="https://www.kmu.gov.ua/ua/npas/243262567">ТАБЛИЦЯ транслітерації українського алфавіту латиницею</a>
+    <a href="https://www.kmu.gov.ua/ua/npas/243262567" target="_blank">ТАБЛИЦЯ транслітерації українського алфавіту
+        латиницею</a>
     <div id="app">
         <input v-model="cyrillicName">
         <button v-on:click="transliterate">Transliterate</button>
-        <p>{{ transliteratedName }}</p>  <button v-on:click="speakEn">🔊 Play</button>
-        <p>{{ transliteratedName }}</p>  <button v-on:click="speakLv">🔊 Play</button>
-        <!-- <input onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' /> -->
+        <p>{{ transliteratedName }}</p> <button v-on:click="speakEn">🔊 Play</button>
+        <p>{{ transliteratedName }}</p> <button v-on:click="speakLv">🔊 Play</button>
     </div>
+    <br/>
     <script src="main.js"></script>
+    <div style="width:300px;vertical-align:top;font-family: Arial;font-size:9pt;line-height: normal">
+        <a rel="license" href=https:///responsivevoice.org/"><img title="ResponsiveVoice Text To Speech" src="https://responsivevoice.org/wp-content/uploads/2014/08/120x31.png"
+                style="float:left;padding-right:2px"></a><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a
+                href="https:///responsivevoice.org/" target="_blank" title="ResponsiveVoice Text To Speech">ResponsiveVoice</a></span>
+        used under <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" title="Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License">Non-Commercial
+            License</a></div>
 </body>
 
 </html>
