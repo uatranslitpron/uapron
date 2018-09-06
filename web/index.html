@@ -5,14 +5,19 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- production version, optimized for size and speed -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 </head>
 
 <body>
+    <a href="https://www.kmu.gov.ua/ua/npas/243262567">ТАБЛИЦЯ транслітерації українського алфавіту латиницею</a>
     <div id="app">
         <input v-model="cyrillicName">
         <button v-on:click="transliterate">Transliterate</button>
-        <p>{{ transliteratedName }}</p>
+        <p>{{ transliteratedName }}</p>  <button v-on:click="speakEn">🔊 Play</button>
+        <p>{{ transliteratedName }}</p>  <button v-on:click="speakLv">🔊 Play</button>
+        <!-- <input onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' /> -->
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
